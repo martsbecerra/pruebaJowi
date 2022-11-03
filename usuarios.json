@@ -1,0 +1,38 @@
+{
+    "users": [{
+        "mail": "juanmanuelbecerra@gmail.com",
+        "pass": "Covid2020"
+    },
+    {
+        "mail": "martinbecerra@gmail.com",
+        "pass": "Coder2022"
+    },
+    {
+        "mail": "mercedesbecerra@gmail.com",
+        "pass": "Cata2022"
+    },
+    {
+        "mail": "hectorbecerra@gmail.com",
+        "pass": "psico2022"
+    },
+    {
+        "mail": "anamariapatiniotis@gmail.com",
+        "pass": "psico1955"
+    },
+    {
+        "mail": "nicovazquez@gmail.com",
+        "pass": "racing2001"
+    },
+    {
+        "mail": "cufagamboa@gmail.com",
+        "pass": "fifa2023"
+    },
+    {
+        "mail": "matubernichan@gmail.com",
+        "pass": "csgo2022"
+    },
+    {
+        "mail": "faka47@gmail.com",
+        "pass": "apex2022"
+    }]
+}

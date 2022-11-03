@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="container-fluid">
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid encabezado">
+                <a class="navbar-brand" href="#"><img src="./assets/img/tiendapampita.png" alt="logo" width="100px"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                    </ul>
+                    <form class="registroIngreso">
+                        <input class="form-control me-2 input1" type="text" placeholder="ingrese su email" id="email">
+                        <input class="form-control me-2 input2" type="text" placeholder="ingrese su contraseña"
+                            id="pass">
+                        <button class="btn btn-outline-success login" type="submit" id="ingresar">Ingresar</button>
+                        <button class="btn btn-outline-success register" id="registrarse"
+                            type="submit">Registrarse</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- GALERÍA DE PRODUCTOS -->
+        <section class="container-fluid productGalery">
+            <div class="card item" style="width: 18rem;">
+                <img src="./assets/img/productonitrilo.jpg" class="card-img-top itemImage" alt="guantes de nitrilo">
+                <div class="card-body">
+                    <h4 class="card-title itemTitle">Nitrilo</h4>
+                    <h5 class="card-price itemPrice">$1200</h5>
+                    <a href="#" class="btn btn-primary btn-outline-success addToShopBtn">Agregar al carrito</a>
+                </div>
+            </div>
+            <div class="card item" style="width: 18rem;">
+                <img src="./assets/img/productolatex.jpg" class="card-img-top itemImage" alt="guantes de nitrilo">
+                <div class="card-body">
+                    <h4 class="card-title itemTitle">Latex</h4>
+                    <h5 class="card-price itemPrice">$450</h5>
+                    <a href="#" class="btn btn-primary btn-outline-success addToShopBtn">Agregar al carrito</a>
+                </div>
+            </div>
+            <div class="card item" style="width: 18rem;">
+                <img src="./assets/img/productovinilo.jpg" class="card-img-top itemImage" alt="guantes de nitrilo">
+                <div class="card-body">
+                    <h4 class="card-title itemTitle">Vinilo</h4>
+                    <h5 class="card-price itemPrice">$500</h5>
+                    <a href="#" class="btn btn-primary btn-outline-success addToShopBtn">Agregar al carrito</a>
+                </div>
+            </div>
+            <div class="card item" style="width: 18rem;">
+                <img src="./assets/img/productoesteril.jpg" class="card-img-top itemImage" alt="guantes de nitrilo">
+                <div class="card-body">
+                    <h4 class="card-title itemTitle">Esteriles</h4>
+                    <h5 class="card-price itemPrice">$1200</h5>
+                    <a href="#" class="btn btn-primary btn-outline-success addToShopBtn">Agregar al carrito</a>
+                </div>
+            </div>
+            <div class="card item" style="width: 18rem;">
+                <img src="./assets/img/productodomestico.jpg" class="card-img-top itemImage" alt="guantes de nitrilo">
+                <div class="card-body">
+                    <h4 class="card-title itemTitle">Domesticos</h4>
+                    <h5 class="card-price itemPrice">$600</h5>
+                    <a href="#" class="btn btn-primary btn-outline-success addToShopBtn">Agregar al carrito</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- SHOPPING CART -->
+
+        <section>
+            <!-- ENCABEZADO DEL CARRITO -->
+            <div class="shoppingCartiTemsTitles container">
+                <div style="margin-bottom: 20px;">
+                    <h1>CARRITO<i class="fa-solid fa-shop"></i></h1>
+                </div>
+                <div style="margin-bottom: 20px;">
+                    <div>
+                        <p>Imagen</p>
+                    </div>
+                    <div>
+                        <p>Producto</p>
+                    </div>
+                    <div>
+                        <p>Precio</p>
+                    </div>
+                    <div>
+                        <p>Cantidad</p>
+                    </div>
+                    <div>
+                        <p>Borrar</p>
+                    </div>
+                </div>
+            </div>
+            <!-- ACÁ SE INCLUIRÁN LAS COMPRAS REALIZADAS -->
+            <div class="shoppingCartItemsContainer container">
+                
+            </div>
+
+        </section>
+        <!-- SE VISUALIZA EL PRECIO FINAL Y EL BOTON PARA COMPRAR -->
+        <div class="card text-center">
+            <div class="card-body">
+                <h5 class="card-title">Total</h5>
+                <p class="card-text shoppingCartTotal">$0.00</p>
+                <button class="btn btn-secondary buyButton">Finalizar compra</button>
+            </div>
+        </div>
+        <!-- END SHOPPING CART -->
+    </main>
+    <footer class="text-center text-lg-start bg-white text-muted">
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+            <a href="" class="me-4 link-secondary">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="" class="me-4 link-secondary">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="" class="me-4 link-secondary">
+                <i class="fab fa-google"></i>
+            </a>
+            <a href="" class="me-4 link-secondary">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="" class="me-4 link-secondary">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="" class="me-4 link-secondary">
+                <i class="fab fa-github"></i>
+            </a>
+            </div>
+        </section>
+        <div class="container text-center text-md-start mt-5">
+            <div class="row mt-3">
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                    <h6 class="text-uppercase fw-bold mb-4">
+                        <i class="fas fa-gem me-3 text-secondary"></i>Tienda Pampita
+                    </h6>
+                    <p>
+                        Empresa dedicada a la venta mayorista y minorista de guantes descartables de tipo nitrilo,
+                        latex, vinilo, cirugía, domésticos.
+                    </p>
+                </div>
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <h6 class="text-uppercase fw-bold mb-4">
+                        Products
+                    </h6>
+                    <p>
+                        <a href="#!" class="text-reset">Guantes de nitrilo</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset">Guantes de látex</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset">Guantes de látex estériles</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset">Guantes domésticos</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset">Guantes de vinilo</a>
+                    </p>
+                </div>
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                    <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                    <p><i class="fas fa-home me-3 text-secondary"></i> Belgrano, CABA, Argentina</p>
+                    <p>
+                        <i class="fas fa-envelope me-3 text-secondary"></i>
+                        tiendapampita@gmail.com.com
+                    </p>
+                    <p><i class="fas fa-phone me-3 text-secondary"></i>+54 9 11-4399-1216</p>
+                    <p><i class="fas fa-print me-3 text-secondary"></i>+54 9 11-5696-5509</p>
+                </div>
+            </div>
+        </div>
+        </section>
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
+            © 2021 Copyright:
+            <a class="text-reset fw-bold" href="https://mdbootstrap.com/">TIENDA PAMPITA | Todos los derechos
+                reservados.</a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.33/dist/sweetalert2.all.min.js"></script>
+    <script src="https://kit.fontawesome.com/669929ee02.js" crossorigin="anonymous"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/proyectoFinal.js"></script>
+</body>
+
+</html>
